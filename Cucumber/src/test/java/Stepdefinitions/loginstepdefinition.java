@@ -5,19 +5,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import com.Factory.DriverFactory;
+import com.Pages.Loginpage;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 
-public class loginstepdefinition {
 
-	 WebDriver driver;
+
+public class loginstepdefinition  {
+		private WebDriver driver = DriverFactory.getDriver();
+		private Loginpage l = new Loginpage(driver);
 	 
 	 @Given("^user is available in login page$")
 	 public void user_is_available_in_login_page() {
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
-		driver = new ChromeDriver();
 		driver.get("http://localhost:4949/");	
 	}
 	
@@ -28,8 +31,8 @@ public class loginstepdefinition {
 
 	 @Then("^user enters \"(.*)\" and \"(.*)\"$")
 	 public void user_enters_username_and_password(String username, String password) {
-	   driver.findElement(By.id("j_username")).sendKeys(username);
-	   driver.findElement(By.name("j_password")).sendKeys(password);
+	   l.userid.sendKeys(username);
+	   l.password.sendKeys(password);
 	}
 
 	 @Then("^user clicks on login button$")

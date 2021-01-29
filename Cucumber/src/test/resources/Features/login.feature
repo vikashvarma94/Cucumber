@@ -1,5 +1,7 @@
+@FunctionalTest
 Feature: GW Login
 
+#@SmokeTest
 #Scenario: login
 #
 #Given  user is available in login page
@@ -9,6 +11,7 @@ Feature: GW Login
 #Then user is on homepage
 #Then close the browser
 
+@RegressionTest
 Scenario Outline: login
 
 Given user is available in login page

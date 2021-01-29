@@ -102,7 +102,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "test",
+        "Test",
         "Test"
       ],
       "line": 24,
@@ -157,14 +157,14 @@ formatter.match({
   "location": "loginstepdefinition.user_is_available_in_login_page()"
 });
 formatter.result({
-  "duration": 7129507800,
+  "duration": 7193650600,
   "status": "passed"
 });
 formatter.match({
   "location": "loginstepdefinition.title_of_login_page_is_jenkins()"
 });
 formatter.result({
-  "duration": 29674600,
+  "duration": 20912200,
   "status": "passed"
 });
 formatter.match({
@@ -181,28 +181,28 @@ formatter.match({
   "location": "loginstepdefinition.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 231344600,
+  "duration": 215798900,
   "status": "passed"
 });
 formatter.match({
   "location": "loginstepdefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 969566400,
+  "duration": 743693600,
   "status": "passed"
 });
 formatter.match({
   "location": "loginstepdefinition.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 22887800,
+  "duration": 10773700,
   "status": "passed"
 });
 formatter.match({
   "location": "loginstepdefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 126147800,
+  "duration": 4316703600,
   "status": "passed"
 });
 formatter.scenario({
@@ -225,7 +225,7 @@ formatter.step({
 });
 formatter.step({
   "line": 16,
-  "name": "user enters \"test\" and \"Test\"",
+  "name": "user enters \"Test\" and \"Test\"",
   "matchedColumns": [
     0,
     1
@@ -251,20 +251,20 @@ formatter.match({
   "location": "loginstepdefinition.user_is_available_in_login_page()"
 });
 formatter.result({
-  "duration": 5923840500,
+  "duration": 5840759700,
   "status": "passed"
 });
 formatter.match({
   "location": "loginstepdefinition.title_of_login_page_is_jenkins()"
 });
 formatter.result({
-  "duration": 12920400,
+  "duration": 8214600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "test",
+      "val": "Test",
       "offset": 13
     },
     {
@@ -275,21 +275,21 @@ formatter.match({
   "location": "loginstepdefinition.user_enters_username_and_password(String,String)"
 });
 formatter.result({
-  "duration": 189553600,
+  "duration": 140080200,
   "status": "passed"
 });
 formatter.match({
   "location": "loginstepdefinition.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 346030400,
+  "duration": 294902100,
   "status": "passed"
 });
 formatter.match({
   "location": "loginstepdefinition.user_is_on_homepage()"
 });
 formatter.result({
-  "duration": 4110200,
+  "duration": 5446400,
   "error_message": "org.junit.ComparisonFailure: expected:\u003c[Sign in] [Jenkins]\u003e but was:\u003c[Dashboard] [Jenkins]\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat Stepdefinitions.loginstepdefinition.user_is_on_homepage(loginstepdefinition.java:42)\r\n\tat ✽.Then user is on homepage(C:/Users/151508/eclipse-workspace/Cucumber/src/test/java/Features/login.feature:18)\r\n",
   "status": "failed"
 });

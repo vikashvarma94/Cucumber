@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="14.985584">
-<testcase classname="GW Login" name="login" time="8.509129">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="18.790936">
+<testcase classname="GW Login" name="login" time="12.501533">
 <system-out><![CDATA[Given user is available in login page.......................................passed
 When title of login page is jenkins.........................................passed
 Then user enters "vikashvarma94" and "vikash@94"............................passed
@@ -9,10 +9,10 @@ Then user is on homepage....................................................pass
 Then close the browser......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="GW Login" name="login_2" time="6.476455">
+<testcase classname="GW Login" name="login_2" time="6.289403">
 <failure message="org.junit.ComparisonFailure: expected:&lt;[Sign in] [Jenkins]&gt; but was:&lt;[Dashboard] [Jenkins]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at Stepdefinitions.loginstepdefinition.user_is_on_homepage(loginstepdefinition.java:42)&#13;&#10;&#9;at ✽.Then user is on homepage(C:/Users/151508/eclipse-workspace/Cucumber/src/test/java/Features/login.feature:18)&#13;&#10;"><![CDATA[Given user is available in login page.......................................passed
 When title of login page is jenkins.........................................passed
-Then user enters "test" and "Test"..........................................passed
+Then user enters "Test" and "Test"..........................................passed
 Then user clicks on login button............................................passed
 Then user is on homepage....................................................failed
 Then close the browser......................................................skipped
