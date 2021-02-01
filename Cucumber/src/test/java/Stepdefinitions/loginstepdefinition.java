@@ -29,15 +29,9 @@ public class loginstepdefinition  {
 		Assert.assertEquals(driver.getTitle(),"Sign in [Jenkins]");
 	}
 
-	 @Then("^user enters \"(.*)\" and \"(.*)\"$")
-	 public void user_enters_username_and_password(String username, String password) {
-	   l.userid.sendKeys(username);
-	   l.password.sendKeys(password);
-	}
-
-	 @Then("^user clicks on login button$")
-	 public void user_clicks_on_login_button() {
-		driver.findElement(By.name("Submit")).click();
+	 @Then("^user enters \"(.*)\" and \"(.*)\" and login$")
+	 public void user_enters_username_and_password_and_login(String username, String password) {
+	   l.login(username, password);
 	}
 
 	@Then("^user is on homepage$")
@@ -45,8 +39,4 @@ public class loginstepdefinition  {
 		 Assert.assertEquals(driver.getTitle(),"Dashboard [Jenkins]");
 	}
 	
-	@Then("^close the browser$")
-	public void close_the_browser() {
-		driver.close();
-	}
 }

@@ -14,10 +14,19 @@ public class Loginpage {
 	public static WebElement userid;
 	@FindBy(name ="j_password")
 	public static WebElement password;
+	@FindBy(name ="Submit")
+	public static WebElement submit;
 	
 	public Loginpage(WebDriver driver) {
 		 Loginpage.driver=driver;
 		 PageFactory.initElements(driver, this);
+	}
+	
+	public void login(String un, String pass) {
+		userid.sendKeys(un);
+		password.sendKeys(pass);
+		submit.click();
+		
 	}
 }
  

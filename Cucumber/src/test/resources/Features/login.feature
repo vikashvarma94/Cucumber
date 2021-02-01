@@ -16,10 +16,9 @@ Scenario Outline: login
 
 Given user is available in login page
 When title of login page is jenkins
-Then user enters "<username>" and "<password>"
-Then user clicks on login button
+Then user enters "<username>" and "<password>" and login
 Then user is on homepage
-Then close the browser
+
 
 Examples: 
 		| username | password |

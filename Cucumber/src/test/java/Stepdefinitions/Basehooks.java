@@ -29,7 +29,7 @@ public class Basehooks {
 		public void launchbrowser() {
 			String browsername = prop.getProperty("browser");
 			driverfactory = new DriverFactory();
-			driverfactory.init_driver(browsername);
+			driver = driverfactory.init_driver(browsername);
 	}
 	
 	@After(order =1)
